@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SHL Recommender</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    input, button { padding: .6rem; font-size: 1rem; }
+    .card { border: 1px solid #ddd; padding: 1rem; margin-top: .8rem; border-radius: .4rem; }
+    .name { font-weight: bold; }
+    .types { color: #555; font-size: .9rem; }
+  </style>
+  <script>
+    async function queryAPI() {
+      const q = document.getElementById('q').value;
+      const res = await fetch('/recommend', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query: q })
+      });
+      const data = await res.json();
+      const box = document.getElementById('results');
+      box.innerHTML = '';
+      (data.recommended_assessments || []).forEach(a => {
+        const el = document.createElement('div');
+        el.className = 'card';
+        el.innerHTML = `
+          <div class="name"><a href="${a.url}" target="_blank">${a.name}</a></div>
+          <div class="types">${(a.test_type||[]).join(' • ')}</div>
+          <div>${a.description}</div>
+          <div>Duration: ${a.duration} min | Remote: ${a.remote_support} | Adaptive: ${a.adaptive_support}</div>
+        `;
+        box.appendChild(el);
+      });
+    }
+  </script>
+</head>
+<body>
+  <h2>SHL Assessment Recommendation</h2>
+  <input id="q" size="80" placeholder="Paste a JD or type a query..." />
+  <button onclick="queryAPI()">Recommend</button>
+  <div id="results"></div>
+</body>
+</html>

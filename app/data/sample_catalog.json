@@ -1,0 +1,83 @@
+[
+  {
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/python-new/",
+    "name": "Python (New)",
+    "adaptive_support": "No",
+    "description": "Multi-check test that measures the knowledge of python programming, database, modules and library.",
+    "duration": 45,
+    "remote_support": "Yes",
+    "test_type": ["Knowledge & Skills"]
+  },
+  {
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/technology-professional-2-0-job-focused-assessment/",
+    "name": "Technology Professional 2.0 Job Focused Assessment",
+    "adaptive_support": "No",
+    "description": "Job Focused Assessment assesses key behavioral attributes required for success in fast-paced roles.",
+    "duration": 16,
+    "remote_support": "Yes",
+    "test_type": ["Competencies", "Personality & Behavior"]
+  },
+  {
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/cognitive-ability-test/",
+    "name": "General Cognitive Ability",
+    "adaptive_support": "Yes",
+    "description": "Measures logical, numerical, and verbal reasoning to predict problem-solving performance.",
+    "duration": 20,
+    "remote_support": "Yes",
+    "test_type": ["Ability & Aptitude"]
+  },
+  {
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/situational-judgement-test/",
+    "name": "Situational Judgement Test",
+    "adaptive_support": "No",
+    "description": "Assesses judgement in realistic workplace scenarios to evaluate decision-making.",
+    "duration": 25,
+    "remote_support": "Yes",
+    "test_type": ["Biodata & Situational Judgement"]
+  },
+  {
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/java-programming/",
+    "name": "Java Programming Test",
+    "adaptive_support": "No",
+    "description": "Evaluates core Java syntax, OOP, collections, exceptions, concurrency, and debugging.",
+    "duration": 40,
+    "remote_support": "Yes",
+    "test_type": ["Knowledge & Skills"]
+  },
+  {
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/sql-querying/",
+    "name": "SQL Querying Test",
+    "adaptive_support": "No",
+    "description": "Assesses SQL proficiency across joins, subqueries, window functions, and optimization.",
+    "duration": 35,
+    "remote_support": "Yes",
+    "test_type": ["Knowledge & Skills"]
+  },
+  {
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/communication-competency/",
+    "name": "Communication Competency Assessment",
+    "adaptive_support": "No",
+    "description": "Measures written and verbal communication, active listening, and stakeholder engagement.",
+    "duration": 18,
+    "remote_support": "Yes",
+    "test_type": ["Competencies"]
+  },
+  {
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/teamwork-collaboration/",
+    "name": "Teamwork and Collaboration",
+    "adaptive_support": "No",
+    "description": "Evaluates collaboration, conflict resolution, and cross-functional effectiveness.",
+    "duration": 15,
+    "remote_support": "Yes",
+    "test_type": ["Personality & Behavior"]
+  },
+  {
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/critical-thinking/",
+    "name": "Critical Thinking Test",
+    "adaptive_support": "Yes",
+    "description": "Assesses analytical reasoning, inference, and evaluation of arguments.",
+    "duration": 30,
+    "remote_support": "Yes",
+    "test_type": ["Ability & Aptitude"]
+  }
+] 
